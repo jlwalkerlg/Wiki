@@ -2,7 +2,7 @@
 
 This guide and the corresponding code sample show how to set up a multi-tenant architecture and configure routing such that the correct db context for each tenant is automatically injected into your controllers/services.
 
-In a multi-tenant architecture, we have one core database which holds a record of each tenant, as well as separate databases for each tenant, which store data specific to that tenant.
+In a multi-tenant architecture, we have one core database which holds a record of each tenant, as well as separate databases for each tenant that store data specific to that tenant.
 
 To set it up, we first define two db context classes -- a `CoreDbContext` for the core database and a `TenantDbContext` for the tenant databases.
 
